@@ -1,0 +1,34 @@
+# Balll ROS2 Configuration
+# Created by: Caleb Wilson
+# Email: calebwilson@fau.edu
+# Description: This YAML configuration file contains parameters for the clustering node in ROS2.
+# If you use or reference this configuration, please give appropriate credit.
+# or dont this is my old stuff its pretty trash, if u use this ur at least 3 years behind me 
+
+ball_detector:
+  ros__parameters:
+    input_ros_cloud: '/velodyne_points'
+    #input_ros_cloud: '/aft_velodyne/velodyne_points'
+    #input_ros_cloud: '/starboard_velodyne/velodyne_points'
+    #input_ros_cloud: '/velodyne_points'
+    #use below parameters to filter size of clusters to match buoy 
+    # min bounding box size (m)
+    min_x_size: 0.001
+    min_y_size: 0.001
+    min_z_size: 0.001
+    # max 3d bounding box size (m) 
+    max_x_size: 0.8
+    max_y_size: 0.8
+    max_z_size: 0.8
+
+    min_detect_height: -10.0
+    max_detect_height: 10.0
+    # detection distances for centroid of object to Lidar Frame (m) 
+    min_detect_dist: 0.0
+    max_detect_dist: 15.0
+    #General Cluster parameters
+    cluster_tolerance: 0.2
+    min_cluster_size: 5
+    max_cluster_size: 30
+
+

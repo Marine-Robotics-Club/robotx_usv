@@ -1,0 +1,10 @@
+float32 kp_v
+float32 kd_v
+float32 ki_v
+float32 kp_psi
+float32 kd_psi
+float32 ki_psi
+float32 goal_psi
+float32 goal_vel
+float32 goal_x
+float32 goal_y

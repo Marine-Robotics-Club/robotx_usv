@@ -1,0 +1,21 @@
+{
+  "samples": 9615,
+  "mae_sigma_m": 0.0185307900608043,
+  "target_mean_sigma_m": 0.6650443362969387,
+  "features": [
+    "color_code",
+    "det_confidence",
+    "det_range_m",
+    "det_sigma_m",
+    "dx",
+    "dy",
+    "euclidean_m",
+    "mahalanobis_d2",
+    "track_pos_sigma_m",
+    "track_hits",
+    "track_confirmed",
+    "track_age_s",
+    "track_misses",
+    "same_color_track_count"
+  ]
+}

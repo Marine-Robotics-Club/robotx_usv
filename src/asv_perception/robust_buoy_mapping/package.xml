@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>robust_buoy_mapping</name>
+  <version>0.1.0</version>
+  <description>Robust semantic buoy landmark mapping for ROS 2: calibrated ZED projection, LiDAR-camera buoy-detection fusion, color-aware mapping, occupancy grid, and GT evaluation.</description>
+  <maintainer email="xavi@example.com">Xavi</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>yolov26_msgs</depend>
+  <depend>fau_msgs</depend>
+  <depend>lidar_msgs</depend>
+
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>sensor_msgs_py</exec_depend>
+  <exec_depend>python3-joblib</exec_depend>
+  <exec_depend>python3-pandas</exec_depend>
+  <exec_depend>python3-sklearn</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

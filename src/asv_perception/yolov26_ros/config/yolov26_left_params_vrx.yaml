@@ -1,0 +1,14 @@
+yolov26_detector_left:
+  ros__parameters:
+    weights: "/home/highlevel/roboboat_usv/src/asv_perception/yolov26_ros/weights/vrx_yolov26.pt"
+    input_topic: "/wamv/sensors/cameras/far_left_camera_sensor/image_raw"
+    output_topic_image: "/yolov26/annotated_image/left"
+    output_topic_detections: "/yolov26/detections/left"
+    output_topic_black_detection: "/yolov26/detections_black_buoy/left"
+    output_topic_black_imag: "/yolov26/annotated_image_black_buoy/left"
+
+    conf: 0.35
+    iou: 0.45
+    imgsz: 640
+    device: "cuda:0"   # or "cpu"
+    max_det: 300

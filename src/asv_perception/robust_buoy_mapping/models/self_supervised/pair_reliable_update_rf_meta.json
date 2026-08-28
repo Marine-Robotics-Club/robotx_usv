@@ -1,0 +1,26 @@
+{
+  "accuracy": 0.9934653084758793,
+  "precision": 0.99375,
+  "recall": 0.9920965058236273,
+  "f1": 0.9929225645295586,
+  "roc_auc": 0.999731006854718,
+  "samples": 20809,
+  "positives": 9615,
+  "negatives": 11194,
+  "features": [
+    "color_code",
+    "det_confidence",
+    "det_range_m",
+    "det_sigma_m",
+    "dx",
+    "dy",
+    "euclidean_m",
+    "mahalanobis_d2",
+    "track_pos_sigma_m",
+    "track_hits",
+    "track_confirmed",
+    "track_age_s",
+    "track_misses",
+    "same_color_track_count"
+  ]
+}

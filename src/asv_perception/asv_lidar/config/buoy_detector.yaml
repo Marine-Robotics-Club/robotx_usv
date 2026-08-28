@@ -1,0 +1,18 @@
+buoy_detector_vrx:
+  ros__parameters:
+    min_x_size: 0.0
+    min_y_size: 0.0
+    min_z_size: 0.0
+    max_x_size: 0.2
+    max_y_size: 0.2
+    max_z_size: 0.5
+    min_detect_dist: 0.0
+    max_detect_dist: 50.0
+
+    # NEW: z limits
+    min_detect_height: -3.0
+    max_detect_height: 3.0
+
+    cluster_tolerance: 0.25
+    min_cluster_size: 3
+    max_cluster_size: 25000

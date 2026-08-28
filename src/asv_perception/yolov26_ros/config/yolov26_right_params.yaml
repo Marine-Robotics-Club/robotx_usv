@@ -1,0 +1,12 @@
+yolov26_detector:
+  ros__parameters:
+    weights: "/home/highlevel/roboboat_usv/src/asv_perception/yolov26_ros/weights/roboboatv0_best.pt"
+    input_topic: "/cam131/image_raw"
+    output_topic_image: "/yolov26/annotated_image/right"
+    output_topic_detections: "/yolov26/detections/right"
+
+    conf: 0.50
+    iou: 0.45
+    imgsz: 640
+    device: "cuda:0"   # or "cpu"
+    max_det: 300

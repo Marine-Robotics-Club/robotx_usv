@@ -1,0 +1,31 @@
+
+
+ball_detector_dbscan:
+  ros__parameters:
+    wamv: asv
+
+    min_x_size: 0.01
+    min_y_size: 0.01
+    min_z_size: 0.01
+
+    max_x_size: 0.80
+    max_y_size: 0.80
+    max_z_size: 0.80
+
+    min_detect_dist: 0.0
+    max_detect_dist: 35.0
+
+    min_detect_height: -10.0
+    max_detect_height: 10.0
+    min_cluster_size: 1
+    max_cluster_size: 120
+
+    radius_scale: 1.0
+    min_radius_m: 0.05
+
+    dbscan_eps_near: 0.3
+    dbscan_eps_far: 0.75
+    dbscan_range_ref: 30.0
+    dbscan_min_points: 1
+
+

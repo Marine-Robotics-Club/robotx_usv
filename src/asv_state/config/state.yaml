@@ -1,0 +1,28 @@
+#This will hold params for the pid controller
+
+
+state:
+  Simulation: true
+  ref:
+    # Fort Lauderdale
+    #latRef: 26.0555992999
+    #lonRef: -80.1134398
+    
+    #VRX Sydney
+    latRef: -33.722765423824434
+    lonRef: 150.67399169544902
+    # Sydney
+    #latRef: -33.724223
+    #lonRef: 150.679736
+    
+    # Hawaii
+    # latRef: 21.30996
+    # lonRef: -157.890100
+
+  tf:
+    lidarXOffset: 0.75
+    lidarYOffset: 0.0
+    lidarZOffset: -1.5
+    cameraXOffset: 0.75
+    cameraYOffset: -0.108
+    cameraZOffset: -1.411

@@ -1,0 +1,46 @@
+# YOLOv9 ROS2 Configuration
+# Created by: Xavier Vicent
+# Email: xvicentnavar2024@fau.edu
+# Description: This YAML configuration file contains parameters the light_bbioy_detector and localizer code in ROS2.
+#              If you use or reference this configuration, please give appropriate credit.
+# or dont this is my old stuff its pretty trash, if u use this ur at least 3 years behind me 
+
+wamv_detector_vrx:
+  ros__parameters:
+    input_ros_cloud: '/lidar_wamv/points_no_water'
+    #input_ros_cloud: '/aft_velodyne/velodyne_points'
+    #input_ros_cloud: '/starboard_velodyne/velodyne_points'
+    #input_ros_cloud: '/velodyne_points'
+    #use below parameters to filter size of clusters to match buoy 
+    # min bounding box size (m)
+    min_x_size: 1.0
+    min_y_size: 1.0
+    min_z_size: 1.0
+    # max 3d bounding box size (m) 
+    max_x_size: 5.5
+    max_y_size: 5.5
+    max_z_size: 2.0
+    # detection distances for centroid of object to Lidar Frame (m) 
+    min_detect_dist: 1.8
+    max_detect_dist: 150.0
+    #General Cluster parameters
+    cluster_tolerance: 3.0
+    min_cluster_size: 1
+    max_cluster_size: 25000 
+
+    #min_x_size: 2.0
+    #min_y_size: 2.0
+    #min_z_size: 2.0
+    # max 3d bounding box size (m) 
+    #max_x_size: 5.5
+    #max_y_size: 5.5
+    #max_z_size: 3.0
+    # detection distances for centroid of object to Lidar Frame (m) 
+    #min_detect_dist: 1.8
+    #max_detect_dist: 150.0
+    #General Cluster parameters
+    #cluster_tolerance: 2.2
+    #min_cluster_size: 3
+    #max_cluster_size: 25000 
+
+

@@ -1,0 +1,14 @@
+
+# ROS 2 / colcon generated directories
+/build/
+/install/
+/log/
+
+# ROS 2 / colcon generated directories
+/build/
+/install/
+/log/
+
+# YOLO model weights
+src/asv_perception/yolov26_ros/weights/
+src/asv_perception/yolov26_ros/yolov26_ros/*.onnx

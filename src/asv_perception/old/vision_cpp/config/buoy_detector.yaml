@@ -1,0 +1,30 @@
+# Buoy ROS2 Configuration
+# Created by: Caleb Wilson
+# Email: calebwilson@fau.edu
+# Description: This YAML configuration file contains parameters for the clustering node in ROS2.
+#              If you use or reference this configuration, please give appropriate credit.
+
+buoy_detector:
+  ros__parameters:
+    input_ros_cloud: '/velodyne_points'
+    #input_ros_cloud: '/aft_velodyne/velodyne_points'
+    #input_ros_cloud: '/starboard_velodyne/velodyne_points'
+    #input_ros_cloud: '/velodyne_points'
+    #use below parameters to filter size of clusters to match buoy 
+    # min bounding box size (m)
+    min_x_size: 0.1
+    min_y_size: 0.1
+    min_z_size: 0.65
+    # max 3d bounding box size (m) 
+    max_x_size: 0.9
+    max_y_size: 0.9
+    max_z_size: 2.6
+    # detection distances for centroid of object to Lidar Frame (m) 
+    min_detect_dist: 0.5
+    max_detect_dist: 50.0
+    #General Cluster parameters
+    cluster_tolerance: 1.5
+    min_cluster_size: 2
+    max_cluster_size: 40
+
+

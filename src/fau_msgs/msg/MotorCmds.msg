@@ -1,0 +1,9 @@
+int16 port_thrust
+int16 port_azimuth
+int16 stbd_thrust
+int16 stbd_azimuth
+int16 stbd_bow_thrust
+int16 port_bow_thrust
+int16 red
+int16 yellow
+int16 green

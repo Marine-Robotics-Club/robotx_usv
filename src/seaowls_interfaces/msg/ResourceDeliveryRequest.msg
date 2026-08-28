@@ -1,0 +1,3 @@
+uint8 task
+uint8 resource_color
+uint8 delivery_circle_color

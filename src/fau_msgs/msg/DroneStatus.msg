@@ -1,0 +1,14 @@
+int16 las_1
+int16 las_2
+int16 las_3
+int16 las_4
+int16 m1_pos
+int16 m2_pos
+int16 motor_current
+int16 system_zeroed_int
+float32 charging_v
+float32 charging_i
+int16 charge_percent
+int16 charge_status
+float32 pto_battery_v
+float32 system_battery_v

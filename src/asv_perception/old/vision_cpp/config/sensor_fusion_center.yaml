@@ -1,0 +1,47 @@
+sensor_fusion_node_center:
+  ros__parameters:
+    # Topics
+    topic_lidar_buoy: "/vision/output/buoy_detected"
+    topic_lidar_ball: "/vision/output/ball_detected"
+    topic_lidar_boat: "/vision/output/boat_detected"
+    topic_lidar_light: "/vision/output/light_buoy_detected"
+    topic_yolo: "/yolov26/detections/center"
+    topic_fusion: "/vision/output/fusion"
+    topic_rviz: "/vision/output/rviz_fusion"
+    rviz_frame_id: "velodyne"
+
+    # Camera / image model
+    img_width: 1280.0
+    img_height: 720.0
+    hfov_deg: 108.0
+
+    # IMPORTANT: camera yaw offset relative to LiDAR forward (degrees)
+    # Try: +5, +8, +10 or negatives. This is the one you likely need.
+    yaw_offset_deg: -5.0
+
+    # Mapping model: 0=PINHOLE_TAN, 1=EQUIDISTANT, 2=PINHOLE_ATAN
+    model: 2
+    k_atan: 0.85   # used only for PINHOLE_ATAN
+
+    # LiDAR FOV / height / distance filter
+    min_angle_deg: -54.0
+    max_angle_deg:  54.0
+    min_height: -3.0
+    max_height:  3.0
+    max_length: 15.0
+
+    # Range -> bearing window (shrinks with distance)
+    range_near_m: 2.0
+    range_far_m: 30.0
+    dtheta_near_deg: 6.0
+    dtheta_far_deg: 2.0
+    max_length: 30.0
+
+    # YOLO gates / scoring
+    min_confidence: 0.10
+    w_pix: 1.5
+    w_size: 0.0
+    w_conf: 10.0
+
+    # Debug printing
+    log_matches: true

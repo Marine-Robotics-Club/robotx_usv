@@ -1,0 +1,26 @@
+std_msgs/Float64 control_state
+std_msgs/Float64 u
+std_msgs/Float64 tsrsp
+std_msgs/Float64 omegawwsp
+std_msgs/Float64 rpmww
+std_msgs/Float64 rpmgen
+std_msgs/Int64 pwm_cc
+std_msgs/Float64 vg
+std_msgs/Float64 ig
+std_msgs/Float64 pg
+std_msgs/Float64 vb
+std_msgs/Float64 ib
+std_msgs/Float64 pb
+std_msgs/Float64 tg_mod
+std_msgs/Float64 neta
+std_msgs/Float64 tww_mod
+std_msgs/Float64 lastangpos
+std_msgs/Float64 presratio
+std_msgs/Int64 chargec
+std_msgs/Int64 cc_status
+std_msgs/Float64 kp
+std_msgs/Float64 ki
+std_msgs/Float64 kd
+std_msgs/Float64 millis_pto
+std_msgs/Int64 ww_status
+
